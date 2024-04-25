@@ -1,14 +1,14 @@
 import './App.css';
 import TextForm from './components/TextForm';
 import React,{ useState } from 'react';
-import AlertA from './components/AlertA';
-//import About from './components/About';
 import Navbar from './components/Navbar';
+import About from './components/About';
+import AlertA from './components/AlertA';
 
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Routes
+//  import {
+//    BrowserRouter as Router,
+//    Route,
+//    Routes
 // } from "react-router-dom";
 
 
@@ -63,10 +63,11 @@ function App() {
 
         </Router>  */}
         <Navbar title="Text Modifier" aboutTextarea="About" mode = {mode} toggleMode={toggleMode}/>
-      <AlertA alert={alert}/>
+        <AlertA alert={alert}/>
           <div className="container" >
           
           <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode = {mode}/>
+          <About/>
           </div> 
         </>
       );
